@@ -48,6 +48,20 @@ signal_history = []
 position = None
 
 
+def calculate_dynamic_amount(usdt_balance, price):
+    """根据账户余额动态调整下单数量，最低余额要求为2 USDT"""
+    min_balance = 2
+    if usdt_balance < min_balance:
+        return 0
+
+    max_affordable_amount = (usdt_balance * 0.8 * TRADE_CONFIG['leverage']) / price
+    dynamic_amount = min(TRADE_CONFIG['amount'], max_affordable_amount)
+
+    # 保留足够的小数位，避免出现0
+    dynamic_amount = round(dynamic_amount, 6)
+    return dynamic_amount if dynamic_amount > 0 else 0
+
+
 def setup_exchange():
     """设置交易所参数"""
     try:
@@ -474,17 +488,27 @@ def execute_trade(signal_data, price_data):
         balance = exchange.fetch_balance()
         usdt_balance = balance['USDT']['free']
 
+        dynamic_amount = calculate_dynamic_amount(usdt_balance, price_data['price'])
+        if dynamic_amount == 0:
+            print(f"⚠️ 账户可用资金不足以开仓 (可用: {usdt_balance:.2f} USDT)")
+            return
+
+        if dynamic_amount < TRADE_CONFIG['amount']:
+            print(f"根据账户余额调整下单数量为 {dynamic_amount} BTC (原始配置: {TRADE_CONFIG['amount']} BTC)")
+        else:
+            print(f"使用默认下单数量: {dynamic_amount} BTC")
+
         # 智能保证金检查
         required_margin = 0
 
         if signal_data['signal'] == 'BUY':
             if current_position and current_position['side'] == 'short':
                 # 平空仓 + 开多仓：需要额外保证金
-                required_margin = price_data['price'] * TRADE_CONFIG['amount'] / TRADE_CONFIG['leverage']
+                required_margin = price_data['price'] * dynamic_amount / TRADE_CONFIG['leverage']
                 operation_type = "平空开多"
             elif not current_position:
                 # 开多仓：需要保证金
-                required_margin = price_data['price'] * TRADE_CONFIG['amount'] / TRADE_CONFIG['leverage']
+                required_margin = price_data['price'] * dynamic_amount / TRADE_CONFIG['leverage']
                 operation_type = "开多仓"
             else:
                 # 已持有多仓：不需要额外保证金
@@ -494,11 +518,11 @@ def execute_trade(signal_data, price_data):
         elif signal_data['signal'] == 'SELL':
             if current_position and current_position['side'] == 'long':
                 # 平多仓 + 开空仓：需要额外保证金
-                required_margin = price_data['price'] * TRADE_CONFIG['amount'] / TRADE_CONFIG['leverage']
+                required_margin = price_data['price'] * dynamic_amount / TRADE_CONFIG['leverage']
                 operation_type = "平多开空"
             elif not current_position:
                 # 开空仓：需要保证金
-                required_margin = price_data['price'] * TRADE_CONFIG['amount'] / TRADE_CONFIG['leverage']
+                required_margin = price_data['price'] * dynamic_amount / TRADE_CONFIG['leverage']
                 operation_type = "开空仓"
             else:
                 # 已持有空仓：不需要额外保证金
@@ -535,7 +559,7 @@ def execute_trade(signal_data, price_data):
                 exchange.create_market_order(
                     TRADE_CONFIG['symbol'],
                     'buy',
-                    TRADE_CONFIG['amount'],
+                    dynamic_amount,
                     params={'tag': 'f1ee03b510d5SUDE'}
                 )
             elif current_position and current_position['side'] == 'long':
@@ -546,7 +570,7 @@ def execute_trade(signal_data, price_data):
                 exchange.create_market_order(
                     TRADE_CONFIG['symbol'],
                     'buy',
-                    TRADE_CONFIG['amount'],
+                    dynamic_amount,
                     params={'tag': 'f1ee03b510d5SUDE'}
                 )
 
@@ -565,7 +589,7 @@ def execute_trade(signal_data, price_data):
                 exchange.create_market_order(
                     TRADE_CONFIG['symbol'],
                     'sell',
-                    TRADE_CONFIG['amount'],
+                    dynamic_amount,
                     params={'tag': 'f1ee03b510d5SUDE'}
                 )
             elif current_position and current_position['side'] == 'short':
@@ -576,7 +600,7 @@ def execute_trade(signal_data, price_data):
                 exchange.create_market_order(
                     TRADE_CONFIG['symbol'],
                     'sell',
-                    TRADE_CONFIG['amount'],
+                    dynamic_amount,
                     params={'tag': 'f1ee03b510d5SUDE'}
                 )
 
