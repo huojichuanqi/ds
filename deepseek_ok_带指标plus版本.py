@@ -1,5 +1,7 @@
 import os
 import time
+from decimal import Decimal, getcontext
+
 import schedule
 from openai import OpenAI
 import ccxt
@@ -486,7 +488,7 @@ def execute_trade(signal_data, price_data):
     try:
         # 获取账户余额
         balance = exchange.fetch_balance()
-        usdt_balance = balance['USDT']['free']
+        usdt_balance = float(balance['USDT']['free'])
 
         dynamic_amount = calculate_dynamic_amount(usdt_balance, price_data['price'])
         if dynamic_amount == 0:
@@ -499,46 +501,66 @@ def execute_trade(signal_data, price_data):
             print(f"使用默认下单数量: {dynamic_amount} BTC")
 
         # 智能保证金检查
-        required_margin = 0
+        getcontext().prec = 18
+        price_decimal = Decimal(str(price_data['price']))
+        amount_decimal = Decimal(str(dynamic_amount))
+        leverage_decimal = Decimal(str(TRADE_CONFIG['leverage']))
+        available_margin = Decimal(str(usdt_balance))
+
+        required_margin = Decimal('0')
+        operation_type = "保持仓位"
 
         if signal_data['signal'] == 'BUY':
             if current_position and current_position['side'] == 'short':
                 # 平空仓 + 开多仓：需要额外保证金
-                required_margin = price_data['price'] * dynamic_amount / TRADE_CONFIG['leverage']
+                required_margin = price_decimal * amount_decimal / leverage_decimal
                 operation_type = "平空开多"
             elif not current_position:
                 # 开多仓：需要保证金
-                required_margin = price_data['price'] * dynamic_amount / TRADE_CONFIG['leverage']
+                required_margin = price_decimal * amount_decimal / leverage_decimal
                 operation_type = "开多仓"
             else:
                 # 已持有多仓：不需要额外保证金
-                required_margin = 0
+                required_margin = Decimal('0')
                 operation_type = "保持多仓"
 
         elif signal_data['signal'] == 'SELL':
             if current_position and current_position['side'] == 'long':
                 # 平多仓 + 开空仓：需要额外保证金
-                required_margin = price_data['price'] * dynamic_amount / TRADE_CONFIG['leverage']
+                required_margin = price_decimal * amount_decimal / leverage_decimal
                 operation_type = "平多开空"
             elif not current_position:
                 # 开空仓：需要保证金
-                required_margin = price_data['price'] * dynamic_amount / TRADE_CONFIG['leverage']
+                required_margin = price_decimal * amount_decimal / leverage_decimal
                 operation_type = "开空仓"
             else:
                 # 已持有空仓：不需要额外保证金
-                required_margin = 0
+                required_margin = Decimal('0')
                 operation_type = "保持空仓"
 
         elif signal_data['signal'] == 'HOLD':
             print("建议观望，不执行交易")
             return
 
-        print(f"操作类型: {operation_type}, 需要保证金: {required_margin:.2f} USDT")
+        required_margin = required_margin.quantize(Decimal('0.00000001'))
+        margin_gap = available_margin - required_margin
+
+        print(
+            f"操作类型: {operation_type}, 需要保证金: {float(required_margin):.2f} USDT, "
+            f"可用: {usdt_balance:.2f} USDT, 裕度: {float(margin_gap):.6f} USDT"
+        )
+        print(
+            f"[调试] 保证金计算原始值 -> required_margin={required_margin}, "
+            f"available={available_margin}, gap={margin_gap}"
+        )
 
         # 只有在需要额外保证金时才检查
         if required_margin > 0:
-            if required_margin > usdt_balance * 0.8:
-                print(f"⚠️ 保证金不足，跳过交易。需要: {required_margin:.2f} USDT, 可用: {usdt_balance:.2f} USDT")
+            if margin_gap < Decimal('0'):
+                print(
+                    f"⚠️ 保证金不足，跳过交易。需要: {float(required_margin):.2f} USDT, "
+                    f"可用: {usdt_balance:.2f} USDT"
+                )
                 return
         else:
             print("✅ 无需额外保证金，继续执行")
