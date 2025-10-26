@@ -1,10 +1,11 @@
 import os
 import time
-from decimal import Decimal, getcontext
+from decimal import Decimal, getcontext, ROUND_DOWN
 
 import schedule
 from openai import OpenAI
 import ccxt
+from ccxt.base.errors import InvalidOrder
 import pandas as pd
 from datetime import datetime
 import json
@@ -31,8 +32,8 @@ exchange = ccxt.okx({
 
 # 交易参数配置 - 结合两个版本的优点
 TRADE_CONFIG = {
-    'symbol': 'BTC/USDT:USDT',  # OKX的合约符号格式
-    'amount': 0.01,  # 交易数量 (BTC)
+    'symbol': 'ETH/USDT:USDT',  # OKX永续合约符号
+    'amount': 0.05,  # 交易数量 (ETH)
     'leverage': 10,  # 杠杆倍数
     'timeframe': '15m',  # 使用15分钟K线
     'test_mode': False,  # 测试模式
@@ -48,19 +49,128 @@ TRADE_CONFIG = {
 price_history = []
 signal_history = []
 position = None
+MIN_TRADE_AMOUNT = None
+AMOUNT_STEP = None
 
 
-def calculate_dynamic_amount(usdt_balance, price):
+def get_base_asset():
+    """返回当前交易配置的基础资产符号"""
+    return TRADE_CONFIG['symbol'].split('/')[0]
+
+
+def get_trade_amount_constraints():
+    """获取交易对的最小下单数量和步进限制"""
+    global MIN_TRADE_AMOUNT, AMOUNT_STEP
+
+    if MIN_TRADE_AMOUNT is not None and AMOUNT_STEP is not None:
+        return MIN_TRADE_AMOUNT, AMOUNT_STEP
+
+    min_amount = 0
+    amount_step = None
+
+    try:
+        exchange.load_markets()
+        market = exchange.market(TRADE_CONFIG['symbol'])
+
+        if market:
+            limits = market.get('limits', {}) or {}
+            precision = market.get('precision', {}) or {}
+            info = market.get('info', {}) or {}
+
+            min_amount_limit = limits.get('amount', {}).get('min')
+            if min_amount_limit:
+                try:
+                    min_amount = float(min_amount_limit)
+                except (TypeError, ValueError):
+                    min_amount = 0
+
+            precision_value = precision.get('amount')
+            if precision_value is not None:
+                try:
+                    if exchange.precisionMode == ccxt.DECIMAL_PLACES and isinstance(precision_value, int):
+                        amount_step = float(Decimal('1') / (Decimal(10) ** precision_value))
+                    else:
+                        amount_step = float(precision_value)
+                except (TypeError, ValueError, ArithmeticError):
+                    amount_step = None
+
+            lot_size = info.get('lotSz') or info.get('lotSize')
+            if lot_size:
+                try:
+                    lot_size_value = float(lot_size)
+                    if lot_size_value > 0:
+                        amount_step = lot_size_value if amount_step is None else min(amount_step, lot_size_value)
+                        min_amount = max(min_amount, lot_size_value)
+                except (TypeError, ValueError):
+                    pass
+
+            if min_amount and amount_step and min_amount < amount_step:
+                min_amount = amount_step
+
+        if not amount_step:
+            amount_step = min_amount if min_amount else None
+
+    except Exception as e:
+        print(f"⚠️ 无法获取最小下单量信息: {e}")
+
+    MIN_TRADE_AMOUNT = min_amount
+    AMOUNT_STEP = amount_step
+
+    return MIN_TRADE_AMOUNT, AMOUNT_STEP
+
+
+def align_amount_to_step(amount, step):
+    """将数量对齐到交易所要求的步进"""
+    if not step:
+        return round(amount, 6)
+
+    try:
+        decimal_amount = Decimal(str(amount))
+        decimal_step = Decimal(str(step))
+        steps = (decimal_amount / decimal_step).to_integral_value(rounding=ROUND_DOWN)
+        aligned = steps * decimal_step
+        return float(aligned)
+    except Exception:
+        return round(amount, 6)
+
+
+def calculate_dynamic_amount(usdt_balance, price, *, silent=False):
     """根据账户余额动态调整下单数量，最低余额要求为2 USDT"""
     min_balance = 2
     if usdt_balance < min_balance:
         return 0
 
-    max_affordable_amount = (usdt_balance * 0.8 * TRADE_CONFIG['leverage']) / price
-    dynamic_amount = min(TRADE_CONFIG['amount'], max_affordable_amount)
+    min_trade_amount, amount_step = get_trade_amount_constraints()
 
-    # 保留足够的小数位，避免出现0
-    dynamic_amount = round(dynamic_amount, 6)
+    max_affordable_amount = (usdt_balance * 0.8 * TRADE_CONFIG['leverage']) / price
+    if min_trade_amount and max_affordable_amount < min_trade_amount:
+        if not silent:
+            print(
+                f"⚠️ 可用余额不足以满足最小下单量要求。需要至少 {min_trade_amount} "
+                f"{get_base_asset()}"
+            )
+        return 0
+
+    desired_amount = TRADE_CONFIG['amount']
+    if min_trade_amount and desired_amount < min_trade_amount:
+        if not silent:
+            print(
+                f"⚠️ 配置的下单数量 ({desired_amount}) 低于交易所要求的最小数量 "
+                f"({min_trade_amount})，将自动提升到最小数量"
+            )
+        desired_amount = min_trade_amount
+
+    dynamic_amount = min(desired_amount, max_affordable_amount)
+
+    if min_trade_amount:
+        dynamic_amount = max(dynamic_amount, min_trade_amount)
+
+    step_to_use = amount_step if amount_step else min_trade_amount
+    if step_to_use:
+        dynamic_amount = align_amount_to_step(dynamic_amount, step_to_use)
+    else:
+        dynamic_amount = round(dynamic_amount, 6)
+
     return dynamic_amount if dynamic_amount > 0 else 0
 
 
@@ -79,6 +189,45 @@ def setup_exchange():
         balance = exchange.fetch_balance()
         usdt_balance = balance['USDT']['free']
         print(f"当前USDT余额: {usdt_balance:.2f}")
+
+        min_trade_amount, amount_step = get_trade_amount_constraints()
+        if min_trade_amount:
+            print(
+                f"交易对最小下单量: {min_trade_amount} "
+                f"{get_base_asset()}"
+            )
+            if amount_step and amount_step != min_trade_amount:
+                print(f"交易数量步进: {amount_step} {get_base_asset()}")
+        else:
+            print("⚠️ 未能获取交易对的最小下单量信息，采用默认配置")
+
+        market_price = None
+        try:
+            ticker = exchange.fetch_ticker(TRADE_CONFIG['symbol'])
+            market_price = ticker.get('last') or ticker.get('close')
+            if market_price:
+                print(f"当前{get_base_asset()}价格: {market_price:.2f} USDT")
+        except Exception as price_error:
+            print(f"⚠️ 无法获取{get_base_asset()}实时价格: {price_error}")
+
+        if min_trade_amount and market_price:
+            notional = min_trade_amount * market_price
+            required_balance = notional / (TRADE_CONFIG['leverage'] * 0.8)
+            print(
+                f"满足最小下单量大约需要 {required_balance:.2f} USDT "
+                f"(假设使用{TRADE_CONFIG['leverage']}x杠杆且只动用80%资金)"
+            )
+
+        if market_price:
+            simulated_amount = calculate_dynamic_amount(10, market_price, silent=True)
+            if simulated_amount:
+                print(
+                    f"本金10 USDT在当前参数下可下单约 {simulated_amount:.4f} {get_base_asset()}"
+                )
+            else:
+                print(
+                    f"本金10 USDT不足以满足{get_base_asset()}的最小下单量或资金要求"
+                )
 
         return True
     except Exception as e:
@@ -191,8 +340,8 @@ def get_market_trend(df):
         return {}
 
 
-def get_btc_ohlcv_enhanced():
-    """增强版：获取BTC K线数据并计算技术指标"""
+def get_symbol_ohlcv_enhanced():
+    """增强版：获取当前交易对的K线数据并计算技术指标"""
     try:
         # 获取K线数据
         ohlcv = exchange.fetch_ohlcv(TRADE_CONFIG['symbol'], TRADE_CONFIG['timeframe'],
@@ -250,13 +399,14 @@ def generate_technical_analysis_text(price_data):
     tech = price_data['technical_data']
     trend = price_data.get('trend_analysis', {})
     levels = price_data.get('levels_analysis', {})
+    asset_symbol = get_base_asset()
 
     # 检查数据有效性
     def safe_float(value, default=0):
         return float(value) if value and pd.notna(value) else default
 
     analysis_text = f"""
-    【技术指标分析】
+    【{asset_symbol}技术指标分析】
     📈 移动平均线:
     - 5周期: {safe_float(tech['sma_5']):.2f} | 价格相对: {(price_data['price'] - safe_float(tech['sma_5'])) / safe_float(tech['sma_5']) * 100:+.2f}%
     - 20周期: {safe_float(tech['sma_20']):.2f} | 价格相对: {(price_data['price'] - safe_float(tech['sma_20'])) / safe_float(tech['sma_20']) * 100:+.2f}%
@@ -345,6 +495,8 @@ def analyze_with_deepseek(price_data):
 
     # 生成技术分析文本
     technical_analysis = generate_technical_analysis_text(price_data)
+    asset_symbol = get_base_asset()
+    display_symbol = f"{asset_symbol}/USDT"
 
     # 构建K线数据文本
     kline_text = f"【最近5根{TRADE_CONFIG['timeframe']}K线数据】\n"
@@ -364,7 +516,7 @@ def analyze_with_deepseek(price_data):
     position_text = "无持仓" if not current_pos else f"{current_pos['side']}仓, 数量: {current_pos['size']}, 盈亏: {current_pos['unrealized_pnl']:.2f}USDT"
 
     prompt = f"""
-    你是一个专业的加密货币交易分析师。请基于以下BTC/USDT {TRADE_CONFIG['timeframe']}周期数据进行分析：
+    你是一个专业的加密货币交易分析师。请基于以下{display_symbol} {TRADE_CONFIG['timeframe']}周期数据进行分析：
 
     {kline_text}
 
@@ -377,7 +529,7 @@ def analyze_with_deepseek(price_data):
     - 时间: {price_data['timestamp']}
     - 本K线最高: ${price_data['high']:,.2f}
     - 本K线最低: ${price_data['low']:,.2f}
-    - 本K线成交量: {price_data['volume']:.2f} BTC
+    - 本K线成交量: {price_data['volume']:.2f} {asset_symbol}
     - 价格变化: {price_data['price_change']:+.2f}%
     - 当前持仓: {position_text}
 
@@ -496,9 +648,12 @@ def execute_trade(signal_data, price_data):
             return
 
         if dynamic_amount < TRADE_CONFIG['amount']:
-            print(f"根据账户余额调整下单数量为 {dynamic_amount} BTC (原始配置: {TRADE_CONFIG['amount']} BTC)")
+            print(
+                f"根据账户余额调整下单数量为 {dynamic_amount} {get_base_asset()} "
+                f"(原始配置: {TRADE_CONFIG['amount']} {get_base_asset()})"
+            )
         else:
-            print(f"使用默认下单数量: {dynamic_amount} BTC")
+            print(f"使用默认下单数量: {dynamic_amount} {get_base_asset()}")
 
         # 智能保证金检查
         getcontext().prec = 18
@@ -631,6 +786,19 @@ def execute_trade(signal_data, price_data):
         position = get_current_position()
         print(f"更新后持仓: {position}")
 
+    except InvalidOrder as e:
+        print(f"订单执行失败: {e}")
+        min_trade_amount, amount_step = get_trade_amount_constraints()
+        if min_trade_amount:
+            asset_symbol = get_base_asset()
+            print(
+                f"👉 该错误通常表示订单数量低于OKX允许的最小值。"
+                f" 请至少提交 {min_trade_amount} {asset_symbol}"
+            )
+        if amount_step and amount_step != min_trade_amount:
+            print(
+                f"👉 下单数量需要符合 {amount_step} 的步进要求，可用资金不足时会被自动向下取整。"
+            )
     except Exception as e:
         print(f"订单执行失败: {e}")
         import traceback
@@ -664,11 +832,11 @@ def trading_bot():
     print("=" * 60)
 
     # 1. 获取增强版K线数据
-    price_data = get_btc_ohlcv_enhanced()
+    price_data = get_symbol_ohlcv_enhanced()
     if not price_data:
         return
 
-    print(f"BTC当前价格: ${price_data['price']:,.2f}")
+    print(f"{get_base_asset()}当前价格: ${price_data['price']:,.2f}")
     print(f"数据周期: {TRADE_CONFIG['timeframe']}")
     print(f"价格变化: {price_data['price_change']:+.2f}%")
 
@@ -684,7 +852,7 @@ def trading_bot():
 
 def main():
     """主函数"""
-    print("BTC/USDT OKX自动交易机器人启动成功！")
+    print(f"{TRADE_CONFIG['symbol']} OKX自动交易机器人启动成功！")
     print("融合技术指标策略 + OKX实盘接口")
 
     if TRADE_CONFIG['test_mode']:
