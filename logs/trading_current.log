@@ -1,0 +1,931 @@
+2025-10-27 15:42:26 - trading_bot - INFO - INFO - test_system - 系统测试日志
+2025-10-27 15:45:28 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 15:45:57 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 15:46:35 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 15:47:50 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 15:47:50 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 15:47:50 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 15:47:50 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 15:47:50 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 15:48:01 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 15:48:01 - trading_bot - ERROR - ERROR - main - 程序启动失败 - Details: validate_api_keys() missing 1 required positional argument: 'keys'
+2025-10-27 15:48:01 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 15:48:50 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 15:48:50 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 15:48:50 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 15:48:50 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 15:48:50 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 15:48:50 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 15:51:28 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 15:51:28 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 15:51:28 - trading_bot - ERROR - ERROR - main - 程序启动失败 - Details: 'margin_mode'
+2025-10-27 15:51:28 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 15:55:59 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 15:55:59 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 15:55:59 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 15:55:59 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 15:55:59 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 15:55:59 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 15:55:59 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 15:55:59 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 15:55:59 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 15:55:59 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 15:56:00 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/set-leverage - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/set-leverage
+2025-10-27 15:56:02 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/set-leverage - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/set-leverage
+2025-10-27 15:56:05 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/set-leverage - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/set-leverage
+2025-10-27 15:56:05 - trading_bot - ERROR - ERROR - main - 程序启动失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/set-leverage
+2025-10-27 15:56:05 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 15:57:42 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 15:57:42 - trading_bot - ERROR - ERROR - main - 程序启动失败 - Details: __init__() got an unexpected keyword argument 'proxies'
+2025-10-27 15:57:43 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 15:59:16 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 15:59:16 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 15:59:16 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 15:59:16 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 15:59:16 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 15:59:16 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 15:59:19 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 15:59:19 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 15:59:19 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 15:59:19 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 15:59:19 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 15:59:19 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 15:59:19 - trading_bot - ERROR - ERROR - main - 程序启动失败 - Details: __init__() got an unexpected keyword argument 'proxies'
+2025-10-27 15:59:19 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:00:09 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:00:09 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:00:09 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:00:09 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:00:09 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:00:09 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:00:14 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 16:00:14 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 16:00:14 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 16:00:14 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 16:00:14 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 16:00:14 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 16:00:14 - trading_bot - ERROR - ERROR - main - 程序启动失败 - Details: __init__() got an unexpected keyword argument 'proxies'
+2025-10-27 16:00:14 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:01:28 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:01:28 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:01:28 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:01:28 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:01:28 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:01:28 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 16:02:05 - trading_bot - ERROR - ERROR - main - 程序启动失败 - Details: __init__() got an unexpected keyword argument 'proxies'
+2025-10-27 16:02:05 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:02:38 - trading_bot - INFO - INFO - main - 用户中断，程序退出
+2025-10-27 16:02:38 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - main - 初始化交易引擎...
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - main - 启动Web监控面板...
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - web_monitor - 启动Web监控面板: http://0.0.0.0:5000
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - web_monitor - Web监控面板已启动，访问地址: http://localhost:5000
+2025-10-27 16:02:40 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:03:03 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:03:03 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:03:03 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:03:03 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:03:03 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:03:03 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:03:07 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 16:03:07 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 16:03:07 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 16:03:07 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 16:03:07 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 16:03:07 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 16:03:07 - trading_bot - INFO - INFO - main - 初始化交易引擎...
+2025-10-27 16:03:07 - trading_bot - INFO - INFO - main - 启动Web监控面板...
+2025-10-27 16:03:07 - trading_bot - INFO - INFO - web_monitor - 启动Web监控面板: http://0.0.0.0:5000
+2025-10-27 16:03:07 - trading_bot - INFO - INFO - web_monitor - Web监控面板已启动，访问地址: http://localhost:5000
+2025-10-27 16:03:07 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - main - 初始化交易引擎...
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - main - 启动Web监控面板...
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - web_monitor - 启动Web监控面板: http://0.0.0.0:5000
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - web_monitor - Web监控面板已启动，访问地址: http://localhost:5000
+2025-10-27 16:03:23 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - main - 初始化交易引擎...
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - main - 启动Web监控面板...
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - web_monitor - 启动Web监控面板: http://0.0.0.0:5000
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - web_monitor - Web监控面板已启动，访问地址: http://localhost:5000
+2025-10-27 16:04:32 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:05:30 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:05:31 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:06:03 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:06:03 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:06:03 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:06:03 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:06:03 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:06:03 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:07:45 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 16:07:45 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 16:07:45 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 16:07:45 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 16:07:45 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 16:07:45 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 16:07:45 - trading_bot - INFO - INFO - main - 初始化交易引擎...
+2025-10-27 16:07:45 - trading_bot - INFO - INFO - main - 启动Web监控面板...
+2025-10-27 16:07:45 - trading_bot - INFO - INFO - web_monitor - 启动Web监控面板: http://0.0.0.0:5000
+2025-10-27 16:07:45 - trading_bot - INFO - INFO - web_monitor - Web监控面板已启动，访问地址: http://localhost:5000
+2025-10-27 16:07:45 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - main - 初始化交易引擎...
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - main - 启动Web监控面板...
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - web_monitor - 启动Web监控面板: http://0.0.0.0:5000
+2025-10-27 16:09:17 - trading_bot - INFO - INFO - web_monitor - Web监控面板已启动，访问地址: http://localhost:5000
+2025-10-27 16:09:19 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:09:32 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:09:32 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:09:33 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:09:34 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:09:36 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:09:39 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:09:39 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:09:39 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:09:45 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:09:45 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:09:46 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:09:46 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:09:47 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:09:48 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:09:48 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:09:50 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:09:50 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:09:50 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:09:53 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:09:53 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:09:53 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:09:59 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:09:59 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:10:02 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:10:04 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:10:04 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:19:54 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:19:54 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:19:54 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:19:54 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:19:54 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:19:55 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:19:55 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 16:19:55 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 16:19:55 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 16:19:55 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 16:19:55 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 16:19:55 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 16:19:55 - trading_bot - INFO - INFO - main - 初始化交易引擎...
+2025-10-27 16:19:55 - trading_bot - INFO - INFO - main - 启动Web监控面板...
+2025-10-27 16:19:55 - trading_bot - INFO - INFO - web_monitor - 启动Web监控面板: http://0.0.0.0:5000
+2025-10-27 16:19:55 - trading_bot - INFO - INFO - web_monitor - Web监控面板已启动，访问地址: http://localhost:5000
+2025-10-27 16:19:57 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:20:07 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:07 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:20:08 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:20:08 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:11 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:14 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:14 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:14 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:20:18 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:18 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:20:19 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:20:20 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:20:20 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:20 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:22 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:23 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:25 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:25 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:25 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:20:26 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:26 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:26 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:26 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:20:27 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:20:27 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:30 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:31 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:20:31 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:33 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:33 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:33 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:20:34 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:37 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:37 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:37 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:37 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:20:37 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:37 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:20:38 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:20:38 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:20:38 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:20:39 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:39 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:39 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:41 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:41 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:41 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:42 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:42 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:20:43 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:20:44 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:44 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:44 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:44 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:20:44 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:44 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:44 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:20:44 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:44 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:44 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:44 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:20:45 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:20:46 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:46 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:48 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:20:48 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:20:48 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:20:48 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:20:48 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:20:48 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:20:48 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:20:48 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:49 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:49 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:49 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:20:49 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:20:49 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:20:50 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:20:50 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:50 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:51 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:51 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:51 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:20:52 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:52 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:20:53 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:53 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:53 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:20:54 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:55 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:20:55 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:55 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:55 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:55 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:55 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:56 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:56 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:20:56 - trading_bot - ERROR - 获取日志失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:56 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:56 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:57 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:20:57 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:20:57 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:57 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:20:57 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:20:57 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:58 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:20:58 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:20:59 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:59 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:59 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:20:59 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:00 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:00 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:00 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:00 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:01 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:02 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:02 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:02 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:02 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:02 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:03 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:03 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:03 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:03 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:03 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:04 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:04 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:04 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:05 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:05 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:05 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:05 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:05 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:06 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:07 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:07 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 16:21:07 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 16:21:07 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 16:21:07 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 16:21:07 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 16:21:07 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 16:21:07 - trading_bot - INFO - INFO - main - 初始化交易引擎...
+2025-10-27 16:21:07 - trading_bot - INFO - INFO - main - 启动Web监控面板...
+2025-10-27 16:21:07 - trading_bot - INFO - INFO - web_monitor - 启动Web监控面板: http://0.0.0.0:5000
+2025-10-27 16:21:07 - trading_bot - INFO - INFO - web_monitor - Web监控面板已启动，访问地址: http://localhost:5000
+2025-10-27 16:21:08 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:08 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:08 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:09 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:09 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:09 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:09 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:21:10 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:10 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:10 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:10 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:10 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:10 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:11 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:11 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:12 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:12 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:12 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:12 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:13 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:13 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:13 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:14 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:14 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:14 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:14 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:15 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:15 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:15 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:16 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:16 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:16 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:16 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:17 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:17 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:17 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:18 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:18 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:18 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:18 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:18 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:19 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:19 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:19 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:19 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:19 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:21 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:21 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:21 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:21 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:21 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:21 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:21 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:22 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:23 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:24 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:24 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:24 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:24 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:25 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:25 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:25 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:26 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:27 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:27 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:27 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:28 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:28 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:29 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:29 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:29 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:29 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:30 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:30 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:30 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:30 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:30 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:31 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:32 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:32 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:33 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:35 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:35 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:35 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:35 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:36 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:36 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:37 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:37 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:38 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:38 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:38 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:38 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:38 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:38 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:38 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:38 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:39 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:39 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:41 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:41 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:41 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:41 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:41 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:41 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:41 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:41 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:41 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:42 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:42 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:42 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:42 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:42 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:43 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:43 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:43 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:44 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:44 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:44 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:44 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:44 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:44 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:44 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:44 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:44 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:45 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:45 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:46 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:46 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:46 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:47 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:47 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:47 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:47 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:47 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:47 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:47 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:48 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:48 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:48 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:49 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:49 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:49 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:49 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:49 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:49 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:50 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:50 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:50 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:50 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:50 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:50 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:51 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:51 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:51 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:51 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:52 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:52 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:52 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:52 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:52 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:52 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:52 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:52 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:53 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:21:53 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:21:53 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:53 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:53 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:53 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:54 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:54 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:54 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:54 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:21:54 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:54 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:54 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:54 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:55 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:55 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:55 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:55 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:56 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:57 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:57 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:57 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:57 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:57 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:58 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:21:59 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:59 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:59 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:59 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:59 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:59 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:21:59 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:21:59 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:59 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:21:59 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:00 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:00 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:00 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:00 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:00 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:00 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:02 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:02 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:02 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:02 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:02 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:03 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:03 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:04 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:05 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:05 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:05 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:05 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:05 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:05 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:06 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:06 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:07 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:07 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:07 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:08 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:08 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:08 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:08 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:09 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:09 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:09 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:10 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:10 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:10 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:10 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:11 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:11 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:11 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:11 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:11 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:12 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:13 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:13 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:13 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:13 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:14 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:15 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:15 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:17 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:17 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:17 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:18 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:18 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:18 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:18 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:18 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:19 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:20 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:20 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:20 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:21 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:22 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:22 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:22 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:23 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:23 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:24 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:24 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:24 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:24 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:24 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:25 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:25 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:26 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:27 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:27 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:27 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:28 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:28 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:29 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:29 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:29 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:30 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:30 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:30 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:30 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:30 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:30 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:31 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:31 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:31 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:33 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:34 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:34 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:34 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:34 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:34 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:35 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:35 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:35 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:37 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:37 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:37 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:37 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:37 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:37 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:38 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:38 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:39 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:40 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:40 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:40 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:41 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:42 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:42 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:42 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:42 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:43 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:43 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:43 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:44 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:44 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:44 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:45 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:45 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:45 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:46 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:47 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:47 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:48 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:48 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:48 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:48 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:48 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:48 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:49 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:49 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:49 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:49 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:49 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:50 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:50 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:51 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:52 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:52 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:54 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:54 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:54 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:54 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:22:55 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:55 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:55 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:22:55 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:55 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:55 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:57 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:22:57 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:22:57 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:22:58 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:22:58 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:22:59 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:23:00 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:00 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:00 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:00 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:23:01 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:01 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:02 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:23:02 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:23:02 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:03 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:23:03 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:03 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:04 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:04 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:04 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:23:05 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:05 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:06 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:06 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:06 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:06 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:23:06 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:23:07 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:23:08 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:09 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:09 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:09 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:23:13 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:23:13 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:23:14 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:23:14 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:16 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:23:16 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:23:17 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:23:17 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:17 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:20 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:20 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:20 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:23:20 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:25 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:25 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:23:25 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:23:31 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:23:31 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:23:31 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:31 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:34 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:34 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:37 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:37 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:37 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:23:37 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:24:13 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:24:13 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:24:14 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:24:14 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:24:17 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:24:19 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:24:19 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:24:19 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:24:39 - trading_bot - INFO - INFO - config_manager - 配置已加载
+2025-10-27 16:24:39 - trading_bot - INFO - INFO - system_manager - 系统管理器初始化完成
+2025-10-27 16:24:39 - trading_bot - INFO - INFO - main - 启动交易机器人...
+2025-10-27 16:24:39 - trading_bot - INFO - INFO - main - 环境变量加载完成
+2025-10-27 16:24:39 - trading_bot - INFO - INFO - main - 机器人状态已加载
+2025-10-27 16:24:39 - trading_bot - INFO - INFO - main - 交易配置加载完成，交易对: BTC/USDT:USDT
+2025-10-27 16:24:41 - trading_bot - INFO - INFO - main - 运行模式: 测试模式
+2025-10-27 16:24:41 - trading_bot - INFO - INFO - main - 初始化交易所客户端...
+2025-10-27 16:24:41 - trading_bot - INFO - INFO - exchange_client - 设置交易对: BTC/USDT:USDT, 保证金模式: cross
+2025-10-27 16:24:41 - trading_bot - INFO - INFO - main - 设置杠杆倍数: 10x
+2025-10-27 16:24:41 - trading_bot - INFO - INFO - exchange_client - 测试模式: 模拟设置杠杆: 10x
+2025-10-27 16:24:41 - trading_bot - INFO - INFO - main - 初始化DeepSeek AI客户端...
+2025-10-27 16:24:41 - trading_bot - INFO - INFO - main - 初始化交易引擎...
+2025-10-27 16:24:41 - trading_bot - INFO - INFO - main - 启动Web监控面板...
+2025-10-27 16:24:41 - trading_bot - INFO - INFO - web_monitor - 启动Web监控面板: http://0.0.0.0:5000
+2025-10-27 16:24:41 - trading_bot - INFO - INFO - web_monitor - Web监控面板已启动，访问地址: http://localhost:5000
+2025-10-27 16:24:43 - trading_bot - INFO - INFO - main - 清理资源...
+2025-10-27 16:25:13 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:25:13 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:25:14 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:25:14 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:25:17 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:25:20 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:25:20 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:25:20 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:25:25 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:25:26 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:25:28 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:25:31 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:25:31 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:26:13 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:26:13 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:26:14 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:26:14 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:26:17 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:26:19 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:26:19 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:26:19 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:26:25 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:26:26 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:26:28 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:26:31 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:26:31 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:27:13 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:27:13 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:27:14 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:27:15 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:27:17 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:27:20 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:27:20 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:27:20 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:27:26 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:27:26 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:27:29 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:27:31 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:27:31 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:28:13 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:28:13 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:28:14 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:28:14 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:28:17 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:28:19 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:28:19 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:28:19 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:28:25 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:28:26 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:28:28 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:28:31 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:28:31 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:28:55 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:28:55 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:28:56 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:28:57 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:28:59 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:29:00 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:29:01 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:29:02 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:29:02 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:29:02 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:29:08 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:29:08 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:29:11 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:29:13 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:29:13 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:29:14 - trading_bot - ERROR - 获取日志失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:29:14 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:29:14 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:29:14 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:29:15 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:29:15 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:29:17 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:29:18 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:29:18 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:29:20 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:29:20 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:29:20 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:29:26 - trading_bot - ERROR - 获取日志统计失败: Extra data: line 1461 column 2 (char 31919)
+2025-10-27 16:29:26 - trading_bot - ERROR - ERROR - system_manager - 获取数据统计失败: 'DataManager' object has no attribute 'load_data' - Details: 
+2025-10-27 16:29:26 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:29:26 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:29:27 - trading_bot - INFO - INFO - system_manager - 系统信息获取成功
+2025-10-27 16:29:27 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:29:29 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:29:30 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:29:32 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:29:32 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:29:32 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/positions - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:29:32 - trading_bot - ERROR - ERROR - exchange_client - 获取持仓信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/positions?instType=SWAP&instId=BTC%2FUSDT%3AUSDT
+2025-10-27 16:29:32 - trading_bot - INFO - INFO - trading_engine - 当前无持仓
+2025-10-27 16:29:38 - trading_bot - ERROR - ERROR - exchange_client - 获取市场价格失败 - Details: API错误: Instrument ID or Spread ID doesn't exist.
+2025-10-27 16:29:39 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:29:41 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:29:44 - trading_bot - ERROR - ERROR - exchange_client - 请求失败: https://www.okx.com/api/v5/account/balance - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance
+2025-10-27 16:29:44 - trading_bot - ERROR - ERROR - exchange_client - 获取余额信息失败 - Details: 401 Client Error: Unauthorized for url: https://www.okx.com/api/v5/account/balance

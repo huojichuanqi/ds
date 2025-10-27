@@ -1,0 +1,18 @@
+{
+  "trading_mode": "test",
+  "symbol": "BTC-USDT-SWAP",
+  "leverage": 10,
+  "timeframe": "1m",
+  "ma_periods": [
+    5,
+    10,
+    20,
+    60
+  ],
+  "position_size": 0.1,
+  "max_position_size": 0.5,
+  "stop_loss": 0.02,
+  "take_profit": 0.05,
+  "ai_confidence_threshold": 0.7,
+  "last_modified": "2025-10-27T15:45:28.505501"
+}

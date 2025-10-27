@@ -1,0 +1,1462 @@
+{
+  "logs": [
+    {
+      "timestamp": "2025-10-27T15:42:26.960402",
+      "type": "info",
+      "data": {
+        "category": "test_system",
+        "message": "系统测试日志"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:45:28.510501",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:45:57.944816",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:46:35.359967",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:47:50.153989",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:47:50.176992",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:47:50.180005",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:47:50.183994",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:47:50.189990",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:48:01.028251",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:48:01.030249",
+      "type": "error",
+      "data": {
+        "type": "main",
+        "message": "程序启动失败"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:48:01.031246",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:48:50.002669",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:48:50.021687",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:48:50.025671",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:48:50.028689",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:48:50.030669",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:48:50.033666",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:51:28.305615",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:51:28.307630",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易所客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:51:28.309624",
+      "type": "error",
+      "data": {
+        "type": "main",
+        "message": "程序启动失败"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:51:28.311612",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:55:59.785207",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:55:59.803209",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:55:59.808727",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:55:59.811761",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:55:59.814758",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:55:59.816757",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:55:59.819760",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:55:59.821757",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易所客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:55:59.824764",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "设置交易对: BTC/USDT:USDT, 保证金模式: cross"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:55:59.826760",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "设置杠杆倍数: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:56:00.387885",
+      "type": "error",
+      "data": {
+        "type": "exchange_client",
+        "message": "请求失败: https://www.okx.com/api/v5/account/set-leverage"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:56:02.920946",
+      "type": "error",
+      "data": {
+        "type": "exchange_client",
+        "message": "请求失败: https://www.okx.com/api/v5/account/set-leverage"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:56:05.460437",
+      "type": "error",
+      "data": {
+        "type": "exchange_client",
+        "message": "请求失败: https://www.okx.com/api/v5/account/set-leverage"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:56:05.463434",
+      "type": "error",
+      "data": {
+        "type": "main",
+        "message": "程序启动失败"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:56:05.465882",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.937798",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.959796",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.964797",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.968792",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.972797",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.975803",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.980809",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.982798",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易所客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.985800",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "设置交易对: BTC/USDT:USDT, 保证金模式: cross"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.989795",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "设置杠杆倍数: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.992807",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "测试模式: 模拟设置杠杆: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.996252",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化DeepSeek AI客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:42.999776",
+      "type": "error",
+      "data": {
+        "type": "main",
+        "message": "程序启动失败"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:57:43.001773",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:16.452389",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:16.470389",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:16.474384",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:16.479382",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:16.482387",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:16.485379",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:19.246855",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:19.249847",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易所客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:19.253355",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "设置交易对: BTC/USDT:USDT, 保证金模式: cross"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:19.255365",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "设置杠杆倍数: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:19.258364",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "测试模式: 模拟设置杠杆: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:19.262370",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化DeepSeek AI客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:19.265364",
+      "type": "error",
+      "data": {
+        "type": "main",
+        "message": "程序启动失败"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T15:59:19.268361",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:09.830803",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:09.851726",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:09.855716",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:09.860724",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:09.864732",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:09.868722",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:14.101491",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:14.103491",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易所客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:14.105493",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "设置交易对: BTC/USDT:USDT, 保证金模式: cross"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:14.108496",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "设置杠杆倍数: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:14.111496",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "测试模式: 模拟设置杠杆: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:14.114495",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化DeepSeek AI客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:14.117490",
+      "type": "error",
+      "data": {
+        "type": "main",
+        "message": "程序启动失败"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:00:14.121492",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:01:28.548075",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:01:28.570093",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:01:28.575065",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:01:28.580065",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:01:28.583062",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:01:28.587068",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.759185",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.777189",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.782165",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.786152",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.789161",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.792170",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.796162",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.800175",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易所客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.803715",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "设置交易对: BTC/USDT:USDT, 保证金模式: cross"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.806710",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "设置杠杆倍数: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.809702",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "测试模式: 模拟设置杠杆: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.813701",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化DeepSeek AI客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.816711",
+      "type": "error",
+      "data": {
+        "type": "main",
+        "message": "程序启动失败"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:05.820699",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:38.822575",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "用户中断，程序退出"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:38.826584",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.679665",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.704666",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.710666",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.716670",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.721670",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.726665",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.731666",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.736678",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易所客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.741672",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "设置交易对: BTC/USDT:USDT, 保证金模式: cross"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.746680",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "设置杠杆倍数: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.751199",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "测试模式: 模拟设置杠杆: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.755200",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化DeepSeek AI客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.760207",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易引擎..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.766198",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动Web监控面板..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.781725",
+      "type": "info",
+      "data": {
+        "category": "web_monitor",
+        "message": "Web监控面板已启动，访问地址: http://localhost:5000"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:02:40.788726",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:03.874058",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:03.893125",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:03.897101",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:03.902100",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:03.906125",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:03.909112",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:07.265784",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:07.269308",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易所客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:07.273317",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "设置交易对: BTC/USDT:USDT, 保证金模式: cross"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:07.278320",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "设置杠杆倍数: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:07.281340",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "测试模式: 模拟设置杠杆: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:07.286165",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化DeepSeek AI客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:07.289682",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易引擎..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:07.294220",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动Web监控面板..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:07.303729",
+      "type": "info",
+      "data": {
+        "category": "web_monitor",
+        "message": "Web监控面板已启动，访问地址: http://localhost:5000"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:07.313280",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.692106",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.711112",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.717109",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.722113",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.727102",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.731105",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.736117",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.741133",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易所客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.745121",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "设置交易对: BTC/USDT:USDT, 保证金模式: cross"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.749659",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "设置杠杆倍数: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.754654",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "测试模式: 模拟设置杠杆: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.758656",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化DeepSeek AI客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.763657",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易引擎..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.768198",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动Web监控面板..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.781191",
+      "type": "info",
+      "data": {
+        "category": "web_monitor",
+        "message": "Web监控面板已启动，访问地址: http://localhost:5000"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:03:23.789199",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.438801",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.455802",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.459793",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.464812",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.468830",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.472841",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.477831",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.480908",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易所客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.486229",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "设置交易对: BTC/USDT:USDT, 保证金模式: cross"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.490208",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "设置杠杆倍数: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.493229",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "测试模式: 模拟设置杠杆: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.497229",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化DeepSeek AI客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.501220",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易引擎..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.505233",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动Web监控面板..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.517219",
+      "type": "info",
+      "data": {
+        "category": "web_monitor",
+        "message": "Web监控面板已启动，访问地址: http://localhost:5000"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:04:32.523220",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "清理资源..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:05:30.986887",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:05:31.009454",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:06:03.601922",
+      "type": "info",
+      "data": {
+        "category": "config_manager",
+        "message": "配置已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:06:03.623005",
+      "type": "info",
+      "data": {
+        "category": "system_manager",
+        "message": "系统管理器初始化完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:06:03.629038",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动交易机器人..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:06:03.636031",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "环境变量加载完成"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:06:03.641039",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "机器人状态已加载"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:06:03.646021",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "交易配置加载完成，交易对: BTC/USDT:USDT"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:07:45.828594",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "运行模式: 测试模式"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:07:45.832606",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易所客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:07:45.836592",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "设置交易对: BTC/USDT:USDT, 保证金模式: cross"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:07:45.841587",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "设置杠杆倍数: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:07:45.845602",
+      "type": "info",
+      "data": {
+        "category": "exchange_client",
+        "message": "测试模式: 模拟设置杠杆: 10x"
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:07:45.849583",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化DeepSeek AI客户端..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:07:45.853592",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "初始化交易引擎..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:07:45.858587",
+      "type": "info",
+      "data": {
+        "category": "main",
+        "message": "启动Web监控面板..."
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:07:45.868593",
+      "type": "info",
+      "data": {
+        "category": "web_monitor",
+        "message": "启动Web监控面板: http://0.0.0.0:5000"
+      }
+    }
+  ],
+  "last_cleanup": "2025-10-27T15:11:25.319104"
+}T15:11:25.319104"
+}
