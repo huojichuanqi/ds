@@ -49,6 +49,7 @@ TRADE_CONFIG = {
     },
     # 新增智能仓位参数
     'position_management': {
+        'enable_intelligent_position': True,  # 🆕 新增：是否启用智能仓位
         'base_usdt_amount': 100,  # USDT投入下单基数
         'high_confidence_multiplier': 1.5,
         'medium_confidence_multiplier': 1.0,
@@ -163,6 +164,12 @@ position = None
 def calculate_intelligent_position(signal_data, price_data, current_position):
     """计算智能仓位大小 - 修复版"""
     config = TRADE_CONFIG['position_management']
+    
+    # 🆕 新增：如果禁用智能仓位，使用固定仓位
+    if not config.get('enable_intelligent_position', True):
+        fixed_contracts = 0.1  # 固定仓位大小，可以根据需要调整
+        print(f"🔧 智能仓位已禁用，使用固定仓位: {fixed_contracts} 张")
+        return fixed_contracts
 
     try:
         # 获取账户余额
