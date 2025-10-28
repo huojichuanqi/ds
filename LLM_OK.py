@@ -41,15 +41,15 @@ TRADE_CONFIG = {
     'timeframe': '15m',  # 使用15分钟K线
     'test_mode': False,  # 测试模式
     'data_points': 96,  # 24小时数据（96根15分钟K线）
-    'ai_provider': 'deepseek',  # AI提供商选择：'deepseek' 或 'qwen'
+    'ai_provider': 'qwen',  # AI提供商选择：'deepseek' 或 'qwen'
     'analysis_periods': {
-        'short_term': 20,  # 短期均线
-        'medium_term': 50,  # 中期均线
-        'long_term': 96  # 长期趋势
+        'short_term': 21,  # 短期均线
+        'medium_term': 55,  # 中期均线
+        'long_term': 89  # 长期趋势
     },
     # 新增智能仓位参数
     'position_management': {
-        'enable_intelligent_position': True,  # 🆕 新增：是否启用智能仓位
+        'enable_intelligent_position': False,  # 🆕 新增：是否启用智能仓位
         'base_usdt_amount': 100,  # USDT投入下单基数
         'high_confidence_multiplier': 1.5,
         'medium_confidence_multiplier': 1.0,
@@ -249,16 +249,16 @@ def calculate_technical_indicators(df):
         # 移动平均线
         df['sma_5'] = df['close'].rolling(window=5, min_periods=1).mean()
         df['sma_20'] = df['close'].rolling(window=20, min_periods=1).mean()
-        df['sma_50'] = df['close'].rolling(window=50, min_periods=1).mean()
+        df['sma_60'] = df['close'].rolling(window=60, min_periods=1).mean()
 
-        # 指数移动平均线
+        # MACD
         df['ema_12'] = df['close'].ewm(span=12).mean()
         df['ema_26'] = df['close'].ewm(span=26).mean()
         df['macd'] = df['ema_12'] - df['ema_26']
         df['macd_signal'] = df['macd'].ewm(span=9).mean()
         df['macd_histogram'] = df['macd'] - df['macd_signal']
 
-        # 相对强弱指数 (RSI)
+        # RSI
         delta = df['close'].diff()
         gain = (delta.where(delta > 0, 0)).rolling(14).mean()
         loss = (-delta.where(delta < 0, 0)).rolling(14).mean()
@@ -492,7 +492,7 @@ def generate_technical_analysis_text(price_data):
     📈 移动平均线:
     - 5周期: {safe_float(tech['sma_5']):.2f} | 价格相对: {(price_data['price'] - safe_float(tech['sma_5'])) / safe_float(tech['sma_5']) * 100:+.2f}%
     - 20周期: {safe_float(tech['sma_20']):.2f} | 价格相对: {(price_data['price'] - safe_float(tech['sma_20'])) / safe_float(tech['sma_20']) * 100:+.2f}%
-    - 50周期: {safe_float(tech['sma_50']):.2f} | 价格相对: {(price_data['price'] - safe_float(tech['sma_50'])) / safe_float(tech['sma_50']) * 100:+.2f}%
+    - 60周期: {safe_float(tech['sma_60']):.2f} | 价格相对: {(price_data['price'] - safe_float(tech['sma_60'])) / safe_float(tech['sma_60']) * 100:+.2f}%
 
     🎯 趋势分析:
     - 短期趋势: {trend.get('short_term', 'N/A')}
@@ -573,7 +573,7 @@ def create_fallback_signal(price_data):
 
 
 def analyze_with_deepseek(price_data):
-    """使用DeepSeek分析市场并生成交易信号（增强版）"""
+    """使用LLM分析市场并生成交易信号（增强版）"""
 
     # 生成技术分析文本
     technical_analysis = generate_technical_analysis_text(price_data)
@@ -639,12 +639,11 @@ def analyze_with_deepseek(price_data):
     - 情绪数据延迟 → 降低权重，以实时技术指标为准
     3. **风险管理** (权重10%)：考虑持仓、盈亏状况和止损位置
     4. **趋势跟随**: 明确趋势出现时立即行动，不要过度等待
-    5. 因为做的是btc，做多权重可以大一点点
-    6. **信号明确性**:
+    5. **信号明确性**:
     - 强势上涨趋势 → BUY信号
     - 强势下跌趋势 → SELL信号  
     - 仅在窄幅震荡、无明确方向时 → HOLD信号
-    7. **技术指标权重**:
+    6. **技术指标权重**:
     - 趋势(均线排列) > RSI > MACD > 布林带
     - 价格突破关键支撑/阻力位是重要信号 
 
@@ -712,7 +711,7 @@ def analyze_with_deepseek(price_data):
 
         # 安全解析JSON
         result = response.choices[0].message.content
-        print(f"DeepSeek原始回复: {result}")
+        print(f"原始回复: {result}")
 
         # 提取JSON部分
         start_idx = result.find('{')
@@ -982,7 +981,7 @@ def execute_intelligent_trade(signal_data, price_data):
 
 
 def analyze_with_deepseek_with_retry(price_data, max_retries=2):
-    """带重试的DeepSeek分析"""
+    """带重试的LLM分析"""
     for attempt in range(max_retries):
         try:
             signal_data = analyze_with_deepseek(price_data)
