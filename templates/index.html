@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plus 交易建议监控</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, \"Noto Sans\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif; margin: 0; padding: 16px; background: #0f172a; color: #e2e8f0; }
+    header { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
+    h1 { font-size: 18px; margin: 0 12px 0 0; }
+    button { background: #334155; color: #e2e8f0; border: 1px solid #475569; border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+    button:hover { background: #475569; }
+    .meta { color: #94a3b8; font-size: 12px; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+    .card { border: 1px solid #1e293b; border-radius: 8px; background: #0b1220; }
+    .summary { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; }
+    .title { display: flex; gap: 10px; align-items: baseline; }
+    .title .time { font-weight: 600; }
+    .chips { display: flex; gap: 6px; align-items: center; }
+    .chip { font-size: 12px; border: 1px solid #334155; border-radius: 999px; padding: 2px 8px; }
+    .chip.signal { border-color: #7c3aed; color: #c4b5fd; }
+    .chip.conf { border-color: #16a34a; color: #86efac; }
+    .chip.price { border-color: #0891b2; color: #67e8f9; }
+    .warn { color: #fbbf24; }
+    details[open] .summary { border-bottom: 1px dashed #1f2937; }
+    .content { padding: 12px; display: grid; gap: 6px; }
+    .kv { display: grid; grid-template-columns: 120px 1fr; gap: 6px; }
+    pre { background: #0a0f1a; border: 1px solid #1e293b; padding: 8px; border-radius: 6px; overflow: auto; }
+    .empty { color: #64748b; font-style: italic; padding: 24px; text-align: center; }
+  </style>
+  <script>
+    async function fetchRecords() {
+      const res = await fetch('/api/records');
+      return res.json();
+    }
+
+    function render(records, meta) {
+      const grid = document.getElementById('grid');
+      grid.innerHTML = '';
+      if (!records || records.length === 0) {
+        grid.innerHTML = `<div class="empty">暂无记录。日志文件：${meta.log_path || ''}${meta.last_error ? '（' + meta.last_error + '）' : ''}</div>`;
+        return;
+      }
+      for (const r of records) {
+        const id = r.id || Math.random().toString(36).slice(2);
+        const price = r.eth_price != null ? `$${r.eth_price}` : '—';
+        const action = r.action || '';
+        const warn = r.warning ? `<span class="warn">${r.warning}</span>` : '';
+        const pos = typeof r.position === 'object' ? JSON.stringify(r.position, null, 2) : (r.position || '—');
+        const ds = r.deepseek_raw ? r.deepseek_raw : '—';
+        const reason = r.reason || '—';
+        const timeframe = r.timeframe || '—';
+        const change = r.price_change || '—';
+        const stopLoss = r.stop_loss != null ? `$${r.stop_loss}` : '—';
+        const takeProfit = r.take_profit != null ? `$${r.take_profit}` : '—';
+
+        const details = document.createElement('details');
+        details.className = 'card';
+        details.dataset.recordId = id;
+
+        const summary = document.createElement('summary');
+        summary.className = 'summary';
+        summary.innerHTML = `
+          <div class="title">
+            <span class="time">${r.exec_time || ''}</span>
+            <span class="meta">${timeframe}</span>
+            ${warn}
+          </div>
+          <div class="chips">
+            <span class="chip price">价格 ${price}</span>
+            <span class="chip signal">信号 ${r.signal || '—'}</span>
+            <span class="chip conf">信心 ${r.confidence || '—'}</span>
+          </div>
+        `;
+        details.appendChild(summary);
+
+        const content = document.createElement('div');
+        content.className = 'content';
+        content.innerHTML = `
+          <div class="kv"><div>价格变化</div><div>${change}</div></div>
+          <div class="kv"><div>信号统计</div><div>${r.signal_stats || '—'}</div></div>
+          <div class="kv"><div>理由</div><div>${reason}</div></div>
+          <div class="kv"><div>止损</div><div>${stopLoss}</div></div>
+          <div class="kv"><div>止盈</div><div>${takeProfit}</div></div>
+          <div class="kv"><div>仓位</div><div><pre>${pos}</pre></div></div>
+          <div class="kv"><div>下单尺寸</div><div>${r.sizing_note || '—'}</div></div>
+          <div class="kv"><div>原始回复</div><div><pre>${escapeHtml(ds)}</pre></div></div>
+          <div class="kv"><div>执行建议</div><div>${action}</div></div>
+        `;
+        details.appendChild(content);
+        grid.appendChild(details);
+      }
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;');
+    }
+
+    async function load() {
+      const data = await fetchRecords();
+      render(data.records, { log_path: data.log_path, last_error: data.last_error });
+    }
+
+    function expandAll(open) {
+      document.querySelectorAll('details.card').forEach(d => d.open = open);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      load();
+      // Auto refresh every 60s
+      setInterval(load, 60000);
+      document.getElementById('btnExpand').addEventListener('click', () => expandAll(true));
+      document.getElementById('btnCollapse').addEventListener('click', () => expandAll(false));
+      document.getElementById('btnRefresh').addEventListener('click', load);
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Plus 交易建议监控</h1>
+    <button id="btnRefresh">刷新</button>
+    <button id="btnExpand">展开全部</button>
+    <button id="btnCollapse">折叠全部</button>
+  </header>
+  <div id="grid" class="grid"></div>
+</body>
+</html>
+
