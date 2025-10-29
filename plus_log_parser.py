@@ -41,31 +41,58 @@ def _parse_position(text: str):
 
 
 def split_records(log_text: str) -> List[str]:
-    # A record starts at a line with 执行时间: and ends before the next HEADER_LINE section
+    """Split the full log into per-run records.
+
+    Target pattern (observed):
+    ============================================================
+    执行时间: YYYY-MM-DD HH:MM:SS
+    ============================================================
+    <content lines...>
+    [then another '============================================================' starting the next record]
+
+    We capture from the '执行时间:' line inclusive until just before the next header that itself precedes
+    another '执行时间:' line.
+    """
     lines = log_text.splitlines()
-    records: List[List[str]] = []
-    cur: List[str] = []
-    in_record = False
-    for ln in lines:
-        if ln.strip().startswith("执行时间:"):
-            if cur:
-                records.append(cur)
-                cur = []
-            in_record = True
-            cur.append(ln)
-        elif ln.strip() == HEADER_LINE:
-            # separator line; close previous record if any
-            if cur and in_record:
-                records.append(cur)
-                cur = []
-                in_record = False
-        else:
-            if in_record:
+    n = len(lines)
+    i = 0
+    out: List[str] = []
+    while i < n:
+        s = lines[i].strip()
+        if s == HEADER_LINE and i + 1 < n and lines[i + 1].strip().startswith("执行时间:"):
+            # Start of a record
+            start_idx = i + 1  # include 执行时间行
+            # Skip next header line if present immediately after exec_time
+            j = start_idx + 1
+            if j < n and lines[j].strip() == HEADER_LINE:
+                j += 1
+            # Collect until next header that starts a new record
+            k = j
+            while k < n:
+                if lines[k].strip() == HEADER_LINE and (k + 1) < n and lines[k + 1].strip().startswith("执行时间:"):
+                    break
+                k += 1
+            out.append("\n".join(lines[start_idx:k]).strip())
+            i = k
+            continue
+        i += 1
+
+    # Fallback: if nothing matched, fall back to splitting by 执行时间: lines only
+    if not out:
+        cur: List[str] = []
+        for ln in lines:
+            if ln.strip().startswith("执行时间:"):
+                if cur:
+                    out.append("\n".join(cur).strip())
+                    cur = []
                 cur.append(ln)
-    if cur:
-        records.append(cur)
-    # Convert list of lines back to strings
-    return ["\n".join(r).strip() for r in records if any(s.strip() for s in r)]
+            else:
+                if cur:
+                    cur.append(ln)
+        if cur:
+            out.append("\n".join(cur).strip())
+
+    return [r for r in out if r]
 
 
 def parse_plus_log(log_text: str) -> List[Dict[str, Any]]:
@@ -171,4 +198,3 @@ def parse_plus_log(log_text: str) -> List[Dict[str, Any]]:
 
     items.sort(key=sort_key)
     return items
-

@@ -41,9 +41,10 @@
         grid.innerHTML = `<div class="empty">暂无记录。日志文件：${meta.log_path || ''}${meta.last_error ? '（' + meta.last_error + '）' : ''}</div>`;
         return;
       }
-      for (const r of records) {
+      // newest first for convenience
+      for (const r of records.slice().reverse()) {
         const id = r.id || Math.random().toString(36).slice(2);
-        const price = r.eth_price != null ? `$${r.eth_price}` : '—';
+        const price = r.eth_price != null ? `$${r.eth_price}` : null;
         const action = r.action || '';
         const warn = r.warning ? `<span class="warn">${r.warning}</span>` : '';
         const pos = typeof r.position === 'object' ? JSON.stringify(r.position, null, 2) : (r.position || '—');
@@ -60,33 +61,38 @@
 
         const summary = document.createElement('summary');
         summary.className = 'summary';
+        const chips = [
+          price ? `<span class="chip price">价格 ${price}</span>` : '',
+          r.signal ? `<span class="chip signal">信号 ${r.signal}</span>` : '',
+          r.confidence ? `<span class="chip conf">信心 ${r.confidence}</span>` : ''
+        ].filter(Boolean).join('\n');
         summary.innerHTML = `
           <div class="title">
             <span class="time">${r.exec_time || ''}</span>
-            <span class="meta">${timeframe}</span>
+            <span class="meta">${timeframe || ''}</span>
             ${warn}
           </div>
-          <div class="chips">
-            <span class="chip price">价格 ${price}</span>
-            <span class="chip signal">信号 ${r.signal || '—'}</span>
-            <span class="chip conf">信心 ${r.confidence || '—'}</span>
-          </div>
+          <div class="chips">${chips}</div>
         `;
         details.appendChild(summary);
 
         const content = document.createElement('div');
         content.className = 'content';
-        content.innerHTML = `
-          <div class="kv"><div>价格变化</div><div>${change}</div></div>
-          <div class="kv"><div>信号统计</div><div>${r.signal_stats || '—'}</div></div>
-          <div class="kv"><div>理由</div><div>${reason}</div></div>
-          <div class="kv"><div>止损</div><div>${stopLoss}</div></div>
-          <div class="kv"><div>止盈</div><div>${takeProfit}</div></div>
-          <div class="kv"><div>仓位</div><div><pre>${pos}</pre></div></div>
-          <div class="kv"><div>下单尺寸</div><div>${r.sizing_note || '—'}</div></div>
-          <div class="kv"><div>原始回复</div><div><pre>${escapeHtml(ds)}</pre></div></div>
-          <div class="kv"><div>执行建议</div><div>${action}</div></div>
-        `;
+        if (r.raw) {
+          content.innerHTML = `<pre>${escapeHtml(r.raw)}</pre>`;
+        } else {
+          content.innerHTML = `
+            <div class="kv"><div>价格变化</div><div>${change}</div></div>
+            <div class="kv"><div>信号统计</div><div>${r.signal_stats || '—'}</div></div>
+            <div class="kv"><div>理由</div><div>${reason}</div></div>
+            <div class="kv"><div>止损</div><div>${stopLoss}</div></div>
+            <div class="kv"><div>止盈</div><div>${takeProfit}</div></div>
+            <div class="kv"><div>仓位</div><div><pre>${pos}</pre></div></div>
+            <div class="kv"><div>下单尺寸</div><div>${r.sizing_note || '—'}</div></div>
+            <div class="kv"><div>原始回复</div><div><pre>${escapeHtml(ds)}</pre></div></div>
+            <div class="kv"><div>执行建议</div><div>${action}</div></div>
+          `;
+        }
         details.appendChild(content);
         grid.appendChild(details);
       }
@@ -129,4 +135,3 @@
   <div id="grid" class="grid"></div>
 </body>
 </html>
-
