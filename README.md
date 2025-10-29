@@ -34,6 +34,7 @@
 
 #### bash Anaconda3-2024.10-1-Linux-x86_64.sh
 
+
 #### source /root/anaconda3/etc/profile.d/conda.sh 
 #### echo ". /root/anaconda3/etc/profile.d/conda.sh" >> ~/.bashrc
 
@@ -81,6 +82,7 @@ plus服务启动：
 ```
 nohup python -u deepseek_ok_带指标plus版本.py > plus.out.log 2>&1 &
 ```
+
 
 
 - 默认读取当前目录下的 `plus.out.log`：

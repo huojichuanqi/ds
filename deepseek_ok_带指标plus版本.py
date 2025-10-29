@@ -532,27 +532,40 @@ def analyze_with_deepseek(price_data):
     - 本K线成交量: {price_data['volume']:.2f} {asset_symbol}
     - 价格变化: {price_data['price_change']:+.2f}%
     - 当前持仓: {position_text}
+    - 持仓盈亏: {current_pos['unrealized_pnl']:.2f} USDT" if current_pos else "持仓盈亏: 0 USDT
+
+    【防频繁交易重要原则】
+    1. **趋势持续性优先**: 不要因单根K线或短期波动改变整体趋势判断
+    2. **持仓稳定性**: 除非趋势明确强烈反转，否则保持现有持仓方向
+    3. **反转确认**: 需要至少2-3个技术指标同时确认趋势反转才改变信号
+    4. **成本意识**: 减少不必要的仓位调整，每次交易都有成本
+
+    【交易指导原则 - 必须遵守】
+    1. **趋势跟随**: 明确趋势出现时立即行动，不要过度等待
+    2. 因为做的是btc，做多权重可以大一点点
+    3. **信号明确性**:
+    - 强势上涨趋势 → BUY信号
+    - 强势下跌趋势 → SELL信号  
+    - 仅在窄幅震荡、无明确方向时 → HOLD信号
+    4. **技术指标权重**:
+    - 趋势(均线排列) > RSI > MACD > 布林带
+    - 价格突破关键支撑/阻力位是重要信号
+
+    【当前技术状况分析】
+    - 整体趋势: {price_data['trend_analysis'].get('overall', 'N/A')}
+    - 短期趋势: {price_data['trend_analysis'].get('short_term', 'N/A')} 
+    - RSI状态: {price_data['technical_data'].get('rsi', 0):.1f} ({'超买' if price_data['technical_data'].get('rsi', 0) > 70 else '超卖' if price_data['technical_data'].get('rsi', 0) < 30 else '中性'})
+    - MACD方向: {price_data['trend_analysis'].get('macd', 'N/A')}
 
     【分析要求】
-    1. 基于{TRADE_CONFIG['timeframe']}K线趋势和技术指标给出交易信号: BUY(买入) / SELL(卖出) / HOLD(观望)
-    2. 简要分析理由（考虑趋势连续性、支撑阻力、成交量等因素）
-    3. 基于技术分析建议合理的止损价位
-    4. 基于技术分析建议合理的止盈价位
-    5. 评估信号信心程度
-
-    【重要格式要求】
-    - 必须返回纯JSON格式，不要有任何额外文本
-    - 所有属性名必须使用双引号
-    - 不要使用单引号
-    - 不要添加注释
-    - 确保JSON格式完全正确
+    基于以上分析，请给出明确的交易信号
 
     请用以下JSON格式回复：
     {{
         "signal": "BUY|SELL|HOLD",
-        "reason": "分析理由",
+        "reason": "简要分析理由(包含趋势判断和技术依据)",
         "stop_loss": 具体价格,
-        "take_profit": 具体价格,
+        "take_profit": 具体价格, 
         "confidence": "HIGH|MEDIUM|LOW"
     }}
     """
@@ -620,6 +633,30 @@ def execute_trade(signal_data, price_data):
     global position
 
     current_position = get_current_position()
+
+    # 🔴 紧急修复：防止频繁反转
+    if current_position and signal_data['signal'] != 'HOLD':
+        current_side = current_position['side']
+        # 修正：正确处理HOLD情况
+        if signal_data['signal'] == 'BUY':
+            new_side = 'long'
+        elif signal_data['signal'] == 'SELL':
+            new_side = 'short'
+        else:  # HOLD
+            new_side = None
+
+        # 如果只是方向反转，需要高信心才执行
+        if new_side != current_side:
+            if signal_data['confidence'] != 'HIGH':
+                print(f"🔒 非高信心反转信号，保持现有{current_side}仓")
+                return
+
+            # 检查最近信号历史，避免频繁反转
+            if len(signal_history) >= 2:
+                last_signals = [s['signal'] for s in signal_history[-2:]]
+                if signal_data['signal'] in last_signals:
+                    print(f"🔒 近期已出现{signal_data['signal']}信号，避免频繁反转")
+                    return
 
     print(f"交易信号: {signal_data['signal']}")
     print(f"信心程度: {signal_data['confidence']}")
@@ -729,7 +766,7 @@ def execute_trade(signal_data, price_data):
                     TRADE_CONFIG['symbol'],
                     'buy',
                     current_position['size'],
-                    params={'reduceOnly': True, 'tag': 'f1ee03b510d5SUDE'}
+                    params={'reduceOnly': True, 'tag': '60bb4a8d3416BCDE'}
                 )
                 time.sleep(1)
                 # 开多仓
@@ -825,7 +862,43 @@ def analyze_with_deepseek_with_retry(price_data, max_retries=2):
     return create_fallback_signal(price_data)
 
 
+def wait_for_next_period():
+    """等待到下一个15分钟整点"""
+    now = datetime.now()
+    current_minute = now.minute
+    current_second = now.second
+
+    # 计算下一个整点时间（00, 15, 30, 45分钟）
+    next_period_minute = ((current_minute // 15) + 1) * 15
+    if next_period_minute == 60:
+        next_period_minute = 0
+
+    # 计算需要等待的总秒数
+    if next_period_minute > current_minute:
+        minutes_to_wait = next_period_minute - current_minute
+    else:
+        minutes_to_wait = 60 - current_minute + next_period_minute
+
+    seconds_to_wait = minutes_to_wait * 60 - current_second
+
+    # 显示友好的等待时间
+    display_minutes = minutes_to_wait - 1 if current_second > 0 else minutes_to_wait
+    display_seconds = 60 - current_second if current_second > 0 else 0
+
+    if display_minutes > 0:
+        print(f"🕒 等待 {display_minutes} 分 {display_seconds} 秒到整点...")
+    else:
+        print(f"🕒 等待 {display_seconds} 秒到整点...")
+
+    return seconds_to_wait
+
+
 def trading_bot():
+    # 等待到整点再执行
+    wait_seconds = wait_for_next_period()
+    if wait_seconds > 0:
+        time.sleep(wait_seconds)
+
     """主交易机器人函数"""
     print("\n" + "=" * 60)
     print(f"执行时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -868,24 +941,14 @@ def main():
         print("交易所初始化失败，程序退出")
         return
 
-    # 根据时间周期设置执行频率
-    if TRADE_CONFIG['timeframe'] == '1h':
-        schedule.every().hour.at(":01").do(trading_bot)
-        print("执行频率: 每小时一次")
-    elif TRADE_CONFIG['timeframe'] == '15m':
-        schedule.every(15).minutes.do(trading_bot)
-        print("执行频率: 每15分钟一次")
-    else:
-        schedule.every().hour.at(":01").do(trading_bot)
-        print("执行频率: 每小时一次")
+    print("执行频率: 每15分钟整点执行")
 
-    # 立即执行一次
-    trading_bot()
-
-    # 循环执行
+    # 循环执行（不使用schedule）
     while True:
-        schedule.run_pending()
-        time.sleep(1)
+        trading_bot()  # 函数内部会自己等待整点
+
+        # 执行完后等待一段时间再检查（避免频繁循环）
+        time.sleep(60)  # 每分钟检查一次
 
 
 if __name__ == "__main__":
